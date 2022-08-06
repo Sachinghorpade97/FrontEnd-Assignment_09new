@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Assignmrnt-09 MainPage</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+
+    <style>
+        @media only screen and (max-width:1275px) and (min-width: 992px) {
+            .rcard {
+                width: 80% !important;
+            }
+        }
+
+        @media only screen and (max-width: 991px) and (min-width: 576px) {
+            .rcard {
+                width: 80% !important;
+            }
+        }
+
+        @media only screen and (max-width: 575px) and (min-width: 100px) {
+            .rcard {
+                width: 100% !important;
+                margin-left: 0px !important;
+            }
+        }
+
+        @media only screen and (max-width: 575px) and (min-width: 100px) {
+            .rcard1 {
+                width: 100% !important;
+                margin-left: 0px !important;
+            }
+        }
+
+        /* ----------------- */
+        @media only screen and (max-width: 767px) and (min-width: 168px) {
+            .fimg11 {
+                margin-left: -10% !important;
+
+            }
+        }
+
+        /* ------------------------- */
+        @media only screen and (max-width: 878px) and (min-width: 768px) {
+            .fdropdown {
+                margin-left: -45px !important;
+                margin-top: 15px;
+
+            }
+        }
+
+        @media only screen and (max-width: 767px) and (min-width: 293px) {
+            .fdropdown {
+                margin-left: 1px !important;
+
+            }
+        }
+
+        @media only screen and (max-width: 207px) and (min-width: 100px) {
+            .fdropdown {
+                margin-left: -38px !important;
+                width: 3px !important;
+
+            }
+        }
+
+        /* ---------------------------------------- */
+        @media only screen and (max-width: 991px) and (min-width: 193px) {
+            .cbar {
+                margin-top: 44px !important;
+                margin-bottom: 24px !important;
+
+            }
+        }
+
+
+
+
+
+        .line {
+
+            /* Increase this as per requirement */
+            padding-bottom: -13px;
+            border-bottom-style: solid;
+            border-bottom-width: 3px;
+            width: fit-content;
+            color: white;
+        }
+
+        .cardm {
+            /* margin-left: 10%;
+            margin-right: 10%; */
+            margin-top: 8%;
+            margin-bottom: 5%;
+        }
+
+
+
+        .card22 {
+            border-left: 30px solid white;
+            box-shadow: -5px -58px 28px -17px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .card23 {
+            border-left: 30px solid white;
+
+        }
+
+        .card24 {
+            border-left: 30px solid white;
+
+        }
+
+
+
+        .card22:hover {
+            border-left: 30px solid #FFCA2A;
+            /* background-image: url('sasa.png');
+            background-repeat: no-repeat; */
+            /* text-align: center; */
+            /* background-position: 50px; */
+
+        }
+
+        .card23:hover {
+            border-left: 30px solid #FF4B64;
+
+        }
+
+        .card24:hover {
+            border-left: 30px solid #5F94FF;
+
+        }
+
+        .cart {
+            position: absolute;
+            display: none;
+            width: 23%;
+            bottom: 100%;
+            margin-left: 26%;
+            font-size: 20px;
+        }
+
+        .card22:hover .cart {
+            opacity: 1;
+            display: block;
+        }
+
+        .card23:hover .cart {
+            opacity: 1;
+            display: block;
+        }
+
+        .card24:hover .cart {
+            opacity: 1;
+            display: block;
+        }
+
+        /* ------------------------- */
+        /* .ig:hover {
+            border-color: #1b1810;
+        } */
+
+        .ig {
+            transition: transform .7s;
+
+
+        }
+
+        .ig:hover {
+            -ms-transform: scale(1.2);
+            /* IE 9 */
+            -webkit-transform: scale(1.2);
+            /* Safari 3-8 */
+            transform: scale(1.2);
+
+            filter: drop-shadow(8px 8px 8px white);
+
+            /* opacity: 0.6; */
+
+
+
+
+            /* -webkit-box-shadow: inset 5px -31px 65px 33px rgba(240, 240, 240, 0.84);
+            -moz-box-shadow: inset 5px -31px 65px 33px rgba(252, 252, 252, 0.84);
+            box-shadow: inset 5px -31px 65px 33px rgba(216, 216, 216, 0.84); */
+
+            /* border-radius: 40%;
+            box-shadow: inset  0px 0px 30px 30px rgb(201, 201, 201);
+            box-shadow: inset 0px 0px 30px 30px rgb(201, 201, 201);
+            border: none; */
+
+
+            /* box-shadow: inset  0px 0px 30px 30px rgb(201, 201, 201);
+            color: white;
+            background-color: whitesmoke;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 70px; */
+
+
+
+
+
+        }
+    </style>
+
+
+    <div class="container-fluid" style="background-color: whitesmoke;">
+        <div class="row" style=" z-index: 1; position: sticky; top: 0%;">
+            <div class="col-md-12">
+
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #41AAE1;">
+                    <i class="bi bi-list" style="color: #41AAE1;"></i><img class="navimg1 ml-lg-4" src="navimg1.png"
+                        alt="" width="65">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item line ml-lg-5">
+                                <a class="nav-link " style="color: white">Home</a>
+                            </li>
+                            <li class="nav-item ml-lg-4">
+                                <a class="nav-link  navlist " href="#" style="color: white">Learn <i
+                                        class="bi bi-chevron-down"></i></a>
+                            </li>
+                            <li class="nav-item ml-lg-4">
+                                <a class="nav-link  navlist" href="#" style="color: white">Credentials <i
+                                        class="bi bi-chevron-down"></i></a>
+                            </li>
+                            <li class="nav-item ml-lg-4">
+                                <a class="nav-link  navlist" href="#" style="color: white">For Companies <i
+                                        class="bi bi-chevron-down"></i></a>
+                            </li>
+
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <i class="navicon1  bi bi-search" style="color: white; font-size: 20px;"></i>
+                            <button type="button" class="btn  btn-md ml-lg-4 px-4" style="color:white;"><a
+                                    href="page1.html" style="text-decoration: none;"><span style="color: white;"> Log
+                                        in</span></a></button>
+                            <button type="button" class="btn  btn-md ml-lg-4 mr-3 px-4"
+                                style="background-color: white; color: #41AAE1;">Sign up</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 ">
+                <img src="mainimg1.png" class="img-fluid w-100" alt="">
+            </div>
+        </div>
+
+        <div class="col-md-12 mt-lg-5">
+            <section>
+
+                <div class="cbar  " style="margin-left: 43%;">
+                    <div class="row">
+                        <div style="height: 6px; width: 9%; background-color: #FFCA2A; border-radius: 3px;"></div>
+                        <div class="ml-3"
+                            style="height: 6px; width: 4%; background-color: #5F94FF;  border-radius: 3px;"></div>
+                        <div class="ml-3"
+                            style="height: 6px; width: 7%; background-color: #FF4B64;  border-radius: 3px;"></div>
+                    </div>
+                </div>
+
+                <section>
+        </div>
+
+        <div style="margin-bottom: -3%;">
+            <p class="text-center mt-lg-5"><b style="font-size: 35px;"> AAA Academy is the fun way to learn </b></p>
+        </div>
+
+        <!-- card -->
+
+        <div class="container-fluid w-100">
+
+            <div class="row cardm">
+                <div class="col-md-12">
+                    <!-- <div class="col-md-4">
+
+
+                    <div class="card card22" style="width: 100%; ">
+
+                        <div class="card-body cardbody">
+                            <img src="c1img.png" class="mb-3 " alt="">
+                            <h5 class="card-title"><b>Learn In-Demand Skills</b></h5>
+                            <p class="card-text text-muted mt-lg-5">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.
+                                Lorem Ipsum has been the industru's standrd dummy text ever sinc.
+                            </p>
+                            <img class="cart" src="sasa.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card card23" style="width: 100%;">
+                        <div class="card-body cardbody">
+                            <img src="c2img.png" class="mb-3 " alt="">
+                            <h5 class="card-title"><b>Earn Resume-Worthy Credentials</b></h5>
+                            <p class="card-text text-muted  mt-lg-5">Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry.
+                                Lorem Ipsum has been the industru's standrd dummy text ever sinc.</p>
+                            <img class="cart" src="hatti.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card24" style="width: 100%;">
+                        <div class="card-body cardbody"><img src="c3img.png" class="mb-3 " alt="">
+                            <h5 class="card-title"><b>Connect to Opportunities</b></h5>
+                            <p class="card-text text-muted mt-lg-5">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.
+                                Lorem Ipsum has been the industru's standrd dummy text ever sinc.</p>
+                            <img class="cart" src="vagh.png">
+                        </div>
+                    </div>
+                </div> -->
+
+                    <div class="row mb-4 mt-3 justify-content-center">
+                        <div class="card card22  mt-4 mb-4" style="width: 26rem;">
+                            <div class="card-body cardbody">
+                                <img src="c1img.png" class="mb-3 img-fluid" alt="Responsive image">
+                                <h5 class="card-title"><b>Learn In-Demand Skills</b></h5>
+                                <p class="card-text text-muted mt-lg-5">Lorem Ipsum is simply dummy text of the printing
+                                    and
+                                    typesetting industry.
+                                    Lorem Ipsum has been the industru's standrd dummy text ever sinc.
+                                </p>
+                                <img class="cart" src="sasa.png">
+                            </div>
+                        </div>
+
+                        <div class="card card23 mt-4 ml-5 mr-5 mb-4"
+                            style="width: 26rem;  box-shadow: 1px 1px 5px 1px rgb(223, 223, 223);">
+                            <div class="card-body cardbody">
+                                <img src="c2img.png" class="mb-3 img-fluid" alt="Responsive image">
+                                <h5 class="card-title"><b>Earn Resume-Worthy Credentials</b></h5>
+                                <p class="card-text text-muted  mt-lg-5">Lorem Ipsum is simply dummy text of the
+                                    printing
+                                    and typesetting industry.
+                                    Lorem Ipsum has been the industru's standrd dummy text ever sinc.</p>
+                                <img class="cart" src="hatti.png">
+                            </div>
+                        </div>
+
+                        <div class="card card24 mt-4 mb-4" id="mycard3" style="width: 26rem;">
+                            <div class="card-body cardbody"><img src="c3img.png" class="mb-3 img-fluid"
+                                    alt="Responsive image">
+                                <h5 class="card-title"><b>Connect to Opportunities</b></h5>
+                                <p class="card-text text-muted mt-lg-5">Lorem Ipsum is simply dummy text of the printing
+                                    and
+                                    typesetting industry.
+                                    Lorem Ipsum has been the industru's standrd dummy text ever sinc.</p>
+                                <img class="cart" src="vagh.png">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="container-fluid " style="background-color: #41AAE1; margin-bottom: 2%;">
+
+                    <div>
+                        <h2 class="text-center" style="color:white"><b><img src="colorbar.png" class="img-fluid"
+                                    alt="Responsive image"></b></h2>
+                    </div>
+
+                    <div style="margin-bottom: -3%;">
+                        <h2 class="text-center mt-lg-3" style="color:white"><b>Discover More</b></h2>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class="row mt-lg-4 ">
+
+                            <div class="col-md-6 col-sm-6">
+                                <div> <img src="Asset 10@3x.png" width="70%" alt=""
+                                        style="margin-top: 10%; margin-left: 20%;display: block;">
+
+                                    <a href="#" class="hover-switch">
+
+                                        <img src="circlerali.png" width="26%" class="ig"
+                                            style="position:absolute; margin-top: -24%; margin-left: 36%;">
+
+                                        <img src="roundedRali.png" width="27%" class="ig"
+                                            style="position:absolute; margin-top: -40%;margin-left: 58%;">
+
+                                        <img src="mounton.png" width="23%" class="ig"
+                                            style="position:absolute; margin-top: -66%;margin-left: 49%;">
+
+                                        <img src="bhuthouse.png" width="23%" class="ig"
+                                            style="position:absolute; margin-top: -53%;margin-left: 19%;">
+
+                                        <img src="relwe.png" width="20%" class="ig"
+                                            style="position:absolute; margin-top: -41%;margin-left: 39%;">
+
+                                        <img src="squrerali.png" width="20%" class="ig"
+                                            style="position:absolute; margin-top: -37%;margin-left: 24%;">
+
+                                        <img src="kt.png" width="18%" class="ig"
+                                            style="position:absolute; margin-top: -51%;margin-left: 62%;">
+
+                                        <img src="rg1.png" width="16%" class="ig"
+                                            style="position:absolute; margin-top: -66%;margin-left: 36%;">
+
+                                        <img src="Asset 5@3x@2x.png" width="18% " class="ig"
+                                            style="position:absolute; margin-top: -31%;margin-left: 41%;"></a>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-md-6 col-sm-6">
+
+                                <div>
+                                    <h3 class="rcard1" style="color:white; margin-top: 10%; margin-left: 20%;"><b>Choose
+                                            a
+                                            Ride</b>
+                                    </h3>
+                                    <h4 class="rcard1" style="color:white; margin-top: 2%; margin-left: 20%;"><b>IT
+                                            Security</b>
+                                    </h4>
+
+                                </div>
+
+
+
+                                <div class="card rcard mt-4 border-0"
+                                    style="width: 100%; background-color: #c9c9c929; width: 60%; margin-left: 20%;">
+                                    <div class="card-body mt-2 mb-2">
+                                        <p class="card-text"><img class="img-fluid" src="whitebox.png"
+                                                alt="Responsive image"><span style="color:white; margin-left: 3%;">
+                                                Cyber Sequrity hacker
+                                                Exposed!</span>
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="card rcard mt-4 border-0"
+                                    style="width: 100%; background-color: #c9c9c929; width: 60%; margin-left: 20%;">
+                                    <div class="card-body mt-2 mb-2">
+                                        <p class="card-text"><img class="img-fluid" src="whitebox.png"
+                                                alt="Responsive image"><span style="color:white; margin-left: 3%;"> The
+                                                Ultimate Dark Web And its Purpose</span></p>
+
+                                    </div>
+                                </div>
+
+                                <div class="card rcard mt-4 mb-5 border-0"
+                                    style="width: 100%; background-color: #c9c9c929; width: 60%; margin-left: 20%;">
+                                    <div class="card-body mt-2 mb-2">
+                                        <p class="card-text"><img class="img-fluid" src="whitebox.png"
+                                                alt="Responsive image"><span style="color:white; margin-left: 3%;">Cyber
+                                                Security:Ananymous Browsing!</span></p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--  -->
+            </section>
+
+            <footer class="page-footer font-small indigo mt-5">
+
+
+                <div class="container text-center text-md-left">
+
+
+                    <div class="row ml-lg-n5 mr-lg-n5">
+
+
+                        <div class="col-md-3 mx-auto">
+
+
+                            <h5 class="font-weight-bold  mt-3 mb-4">Learn</h5>
+
+                            <ul class="list-unstyled ">
+                                <li class="text-muted">Traila</li>
+                                <li class="text-muted">Tralimixes</li>
+                                <li class="text-muted">Modules</li>
+                                <li class="text-muted">Project</li>
+                                <li class="text-muted">Trailhead Academy</li>
+                                <li class="text-muted">Career path Trails</li>
+                            </ul>
+
+                        </div>
+
+
+
+
+                        <div class="col-md-3  mx-auto">
+
+
+                            <h5 class="font-weight-bold  mt-3 mb-4">Credentials</h5>
+                            <ul class="list-unstyled">
+                                <li class="text-muted">Superbadges</li>
+                                <li class="text-muted">Certifications</li>
+                                <li class="text-muted">Maintain Certifications</li>
+                                <li class="text-muted">Verify certifications</li>
+                                <li class="text-muted">Take Free Certifications</li>
+                            </ul>
+
+                        </div>
+
+
+
+
+
+
+                        <div class="col-md-3  mx-auto">
+
+
+                            <h5 class="font-weight-bold  mt-3 mb-4">&nbsp;&nbsp;Extras</h5>
+
+                            <ul class="list-unstyled">
+                                <li class="text-muted">&nbsp;&nbsp;my Trailhead</li>
+                                <li class="text-muted">&nbsp;&nbsp;Customer Stories</li>
+                                <li class="text-muted">&nbsp;&nbsp;Trail Tracker</li>
+                                <li class="text-muted">&nbsp;&nbsp;Sample Gallery</li>
+                                <li class="text-muted">&nbsp;&nbsp;Trailhead Store</li>
+                            </ul>
+
+                        </div>
+
+
+
+
+
+                        <div class="col-md-3 fimg11  mx-auto mb-4">
+
+                            <ul style="list-style: none;">
+
+                                <li class="text-muted mb-3"><img src="fbtw.png" class="img-fluid" alt="Responsive image"
+                                        style="margin-left: 15%;"></li>
+                                <li class="text-muted mb-3"><img src="fimg1.png" class="img-fluid"
+                                        alt="Responsive image" style="margin-left: 15%;"></li>
+                                <li class="text-muted mb-3"><img src="fimg2.png" class="img-fluid"
+                                        alt="Responsive image" style="margin-left: 15%;"></li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </footer>
+
+            <div class="container">
+                <div class="row">
+                    <div class=" col-md-10  ">
+                        <div style="margin-top: 3%;">
+                            <img src="navimg1.png" alt="" width="5%">
+                            <small style="font-size: 12px;"> <a href="">@</a> 2021 salsforce.com, inc.all rights
+                                reserved.
+                                &nbsp;
+                                Privacy Statement &nbsp; Terms of Use &nbsp; <a href="" rel="">User of
+                                    cookies</a>&nbsp;
+                                Trust
+                                &nbsp; Accessibility &nbsp; Help &nbsp; cookies
+
+                                Prefrences</small>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-2 mt-4">
+                        <div class="btn-group dropup fdropdown" style="margin-left: -9%;">
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"
+                                aria-expanded="false;">
+                                United Kingdom &nbsp;
+                            </button>
+                            <ul class="dropdown-menu" style="width: 100%;">
+
+                                <li style="margin-left: 37px; margin-bottom: -9px;">Singapore</li>
+                                <hr>
+                                <li style="margin-left: 37px; margin-bottom: -9px;">Zambia</li>
+                                <hr>
+                                <li style="margin-left: 37px; margin-bottom: -9px;">Western India</li>
+                                <hr>
+                                <li style="margin-left: 25px; margin-bottom: 2px;margin-top: -6px;">United Arab
+                                    Emirates
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    </section>
+    <section class="mt-5"></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

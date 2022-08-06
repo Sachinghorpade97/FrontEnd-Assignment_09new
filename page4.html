@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Assignmrnt-09 MainPage</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+
+
+    <style>
+        @media only screen and (max-width: 767px) and (min-width:150px) {
+            .maincards {
+                width: 100% !important;
+                margin-top: 10%;
+            }
+        }
+
+        @media only screen and (max-width: 767px) and (min-width:150px) {
+            .mycard22 {
+                width: 100% !important;
+                margin-left: -1% !important;
+                /* z-index: 1 !important;
+                position: sticky !important; 
+                top: 18% !important; */
+                position: inherit !important;
+                /* z-index: 1 !important; */
+                margin-top: -7%;
+
+
+
+            }
+        }
+
+        @media only screen and (max-width: 1550px) and (min-width:100px) {
+            .sidecard {
+                z-index: 0 !important;
+                position: relative;
+
+            }
+        }
+
+        /* ---------------------------------------------------------------------------------- */
+
+        @media only screen and (max-width: 1085px) and (min-width:768px) {
+            .maincards {
+
+                width: 105% !important;
+
+            }
+        }
+
+        @media only screen and (max-width: 988px) and (min-width:768px) {
+            .card11 {
+
+                margin-left: -30% !important;
+
+                width: 110% !important;
+               
+               
+
+            }
+        }
+
+       
+
+        @media only screen and (max-width: 1204px) and (min-width:768px) {
+            .sidecard {
+                width: 100% !important;
+                margin-left: -4% !important;
+
+            }
+        }
+
+
+
+        .navbar1 {
+            background-color: #41AAE1;
+        }
+
+        .navicon1 {
+            color: white;
+            font-size: 30px;
+            margin-bottom: 3px;
+        }
+
+        .navp1 {
+            color: white;
+            margin-top: 10px;
+            margin-right: 13px;
+        }
+
+        .navp2 {
+            margin-top: 18px;
+            margin-bottom: 18px;
+
+        }
+
+        .sidecard {
+            width: 72%;
+            margin-left: 33%;
+            height: 60%;
+        }
+
+        #flexCheckDefault {
+            height: 20px;
+            width: 20px;
+
+        }
+
+        /* ------------------------------------------------ */
+        .collapsible {
+            background-color: whitesmoke;
+            color: rgb(24, 23, 23);
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: #41AAE1;
+            color: white;
+        }
+
+        .collapsible:after {
+            content: '\002B';
+            color: rgb(44, 42, 42);
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+            color: white;
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+    </style>
+
+
+    <div class="container-fluid" style="background-color: whitesmoke;">
+        <div class="row" style=" z-index: 1; position: sticky; top: 0%;">
+            <div class="col-md-12">
+
+                <nav class="navbar navbar1 navbar-light">
+                    <form class="form-inline">
+                        <i class="navicon1  ml-2 bi bi-list" onclick="w3_open()"></i>
+                        <img class="navimg1 img-fluid ml-lg-4" src="navimg1.png" alt="Responsive image" width="65">
+                    </form>
+
+                    <form class="form-inline">
+                        <i class="navicon1 mr-lg-4 mb-2 bi bi-search"></i>
+                        <p class="navp1">Reviewer</p>
+                        <img class="navimg2 img-fluid mr-lg-4" src="navimg2.png" alt="Responsive image" width="60">
+                        <img class="navbel img-fluid mr-lg-4" src="navbel.png" alt="Responsive image" width="35">
+                        <i class="navicon1 mr-3 bi bi-gear"></i>
+                    </form>
+                </nav>
+
+                <nav class="navbar navbar-light bg-light">
+                    <form class="form-inline ml-lg-5">
+                        <h3>
+                            <p class="navp2 ml-lg-5"><b class="p1 ml-lg-5">
+                                    <span class="p3 ml-lg-5"> Dashboard </span></b></p>
+                        </h3>
+                    </form>
+                </nav>
+
+            </div>
+
+
+            <div class="w3-sidebar w3-bar-block w3-border-right" id="mySidebar" style="z-index: 1;">
+                <button onclick="w3_close()" class="w3-bar-item w3-large"><img class="navimg1 ml-lg-4" src="navimg1.png"
+                        alt="" width="65"><i class="bi bi-chevron-double-left float-right mt-lg-3"></i></button>
+                <a class="w3-bar-item w3-button" style="text-decoration-line: none;"><i class="bi bi-house-fill"
+                        style="color: rgb(153, 153, 153);"></i> &nbsp;&nbsp; Home</a>
+                <a class="w3-bar-item w3-button" style="text-decoration-line: none;">&nbsp;<img class="navb"
+                        src="Lernicon.png" alt="" width="30" style="margin-left: -12px;"> &nbsp; Learn</a>
+                <a class="w3-bar-item w3-button" style="text-decoration-line: none;">&nbsp;<img class="navb"
+                        src="cred.png" alt="" width="30" style="margin-left: -12px;"> &nbsp; Credential</a>
+                <a class="w3-bar-item w3-button" style="text-decoration-line: none;">&nbsp;<img class="navb"
+                        src="cred2.png" alt="" width="30" style="margin-left: -12px;"> &nbsp; For Companies</a>
+            </div>
+
+        </div>
+
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3">
+
+                    <div class="card sidecard mycard22 border-0" style="position: sticky; top: 18%; z-index: 1 ; ">
+                        <div class="card-body">
+                            <h6 class="card-title"><b><i class="bi bi-funnel"></i> Filter your results</b></h6>
+                            <button class="collapsible mt-4">Post</button>
+                            <div class="content">
+                                <div class="form-check">
+                                    <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label mt-3" for="flexCheckDefault">
+                                        &nbsp; Approved
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label mt-3" for="flexCheckDefault">
+                                        &nbsp; Submitted in Review
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <!-- <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault"> -->
+                                    <label class="form-check-label mt-3" for="flexCheckDefault">
+                                        &nbsp; Published
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <!-- <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault"> -->
+                                    <label class="form-check-label mt-3" for="flexCheckDefault">
+                                        &nbsp; Draft
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <!-- <input class="form-check-input mt-3 mb-2" type="checkbox" value=""
+                                        id="flexCheckDefault"> -->
+                                    <label class="form-check-label mt-3 mb-2" for="flexCheckDefault">
+                                        &nbsp; Reassigned
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button class="collapsible mt-3">Categary</button>
+                            <div class="content">
+                                <div class="form-check">
+                                    <!-- <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault"> -->
+                                    <label class="form-check-label mt-3" for="flexCheckDefault">
+                                        &nbsp; Play by play series
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <!-- <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault"> -->
+                                    <label class="form-check-label mt-3" for="flexCheckDefault">
+                                        &nbsp; What is new
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <!-- <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault"> -->
+                                    <label class="form-check-label mt-3" for="flexCheckDefault">
+                                        &nbsp; Code snippet
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <!-- <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault"> -->
+                                    <label class="form-check-label mt-3" for="flexCheckDefault">
+                                        &nbsp; Case studis
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <!-- <input class="form-check-input mt-3 mb-2" type="checkbox" value=""
+                                        id="flexCheckDefault"> -->
+                                    <label class="form-check-label mt-3 mb-2" for="flexCheckDefault">
+                                        &nbsp; How to?
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button class="collapsible mt-3">Level</button>
+                            <div class="content">
+                                <div class="form-check">
+                                    <!-- <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault"> -->
+                                    <label class="form-check-label mt-3" for="flexCheckDefault">
+                                        &nbsp; Beginner
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <!-- <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault"> -->
+                                    <label class="form-check-label mt-3" for="flexCheckDefault">
+                                        &nbsp; Intermediate
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <!-- <input class="form-check-input mt-3 mb-1" type="checkbox" value=""
+                                        id="flexCheckDefault"> -->
+                                    <label class="form-check-label mt-3 mb-1" for="flexCheckDefault">
+                                        &nbsp; Advance
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-9">
+
+                    <div class="card maincards border-0" style="width: 96%; background-color: whitesmoke;">
+                        <div class="card-body">
+                            <h4 class="card-title ml-4 mb-4"><b>Your Submission</b></h4>
+
+                            <div class="col-md-12">
+
+                                <div class="row row-cols-1 row-cols-md-3">
+                                    <div class="col mb-4">
+                                        <section style="width: 100%;">
+                                            <!-- <button type="button" class="btn btn-light">Light</button> -->
+                                            <div class="card card11" style=" border-radius: 8%;">
+                                                <img src="lastc1.png" class="card-img-top" alt="..."
+                                                    style="border-top-left-radius: 10%; border-top-right-radius: 10%;">
+                                                <div class="card-body">
+                                                    <p class="card-text text-muted">Microsoft AZ-900 (GLP-Title)</p>
+                                                    <h4 class="card-title"><b>Microsoft Azure-Beginner's Guide</b>
+                                                    </h4>
+                                                    <p><small style="color: #18B4E3;">intermediate
+
+                                                            -5 min 2500 points</small></p>
+                                                    <p class="card-text">The Detailed description about Microsoft
+                                                        azure
+                                                        -
+                                                        beginners guide for students and professionals who are
+                                                        looking
+                                                        for a
+                                                        starter Guide</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <button type="button" class="btn btn-sm"
+                                                        style="color: #FA270D; background-color: rgb(248, 197, 197);">Submitted
+                                                        for Review</button>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+
+                                    <div class="col mb-4">
+                                        <section style="width: 100%;">
+                                            <div class="card card11" style="  border-radius: 8%;">
+                                                <img src="lastc2.png" class="card-img-top" alt="..."
+                                                    style="border-top-left-radius: 10%; border-top-right-radius: 10%;">
+                                                <div class="card-body">
+                                                    <p class="card-text text-muted">Microsoft AZ-900 (GLP-Title)</p>
+                                                    <h4 class="card-title"><b>Microsoft Azure-Beginner's Guide</b>
+                                                    </h4>
+                                                    <p><small style="color: #18B4E3;">intermediate
+
+                                                            -5 min 2500 points</small></p>
+                                                    <p class="card-text">The Detailed description about Microsoft
+                                                        azure
+                                                        -
+                                                        beginners guide for students and professionals who are
+                                                        looking
+                                                        for a
+                                                        starter Guide</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <button type="button" class="btn btn-sm"
+                                                        style="color: #58C0E8; background-color: #afdcee;">Published</button>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+
+                                    <div class="col mb-4">
+                                        <section style="width: 100%;">
+                                            <div class="card card11" style="  border-radius: 8%;">
+                                                <img src="lastc3.png" class="card-img-top" alt="..."
+                                                    style="border-top-left-radius: 10%; border-top-right-radius: 10%;">
+                                                <div class="card-body">
+                                                    <p class="card-text text-muted">Microsoft AZ-900 (GLP-Title)</p>
+                                                    <h4 class="card-title"><b>Microsoft Azure-Beginner's Guide</b>
+                                                    </h4>
+                                                    <p><small style="color: #18B4E3;">intermediate
+
+                                                            -5 min 2500 points</small></p>
+                                                    <p class="card-text">The Detailed description about Microsoft
+                                                        azure
+                                                        -
+                                                        beginners guide for students and professionals who are
+                                                        looking
+                                                        for a
+                                                        starter Guide</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <button type="button" class="btn btn-sm"
+                                                        style="color: #58C0E8; background-color: #afdcee;">Published</button>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+
+                                    <div class="col mb-4">
+                                        <section style="width: 100%;">
+                                            <div class="card card11" style="  border-radius: 8%;">
+                                                <img src="lastc1.png" class="card-img-top" alt="..."
+                                                    style="border-top-left-radius: 10%; border-top-right-radius: 10%;">
+                                                <div class="card-body">
+                                                    <p class="card-text text-muted">Microsoft AZ-900 (GLP-Title)</p>
+                                                    <h4 class="card-title"><b>Microsoft Azure-Beginner's Guide</b>
+                                                    </h4>
+                                                    <p><small style="color: #18B4E3;">intermediate
+
+                                                            -5 min 2500 points</small></p>
+                                                    <p class="card-text">The Detailed description about Microsoft
+                                                        azure
+                                                        -
+                                                        beginners guide for students and professionals who are
+                                                        looking
+                                                        for a
+                                                        starter Guide</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <button type="button" class="btn btn-sm"
+                                                        style="color: #FA270D; background-color: rgb(248, 197, 197);">Submitted
+                                                        for Review</button>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+
+                                    <div class="col mb-4">
+                                        <section style="width: 100%;">
+                                            <div class="card card11" style="  border-radius: 8%;">
+                                                <img src="lastc2.png" class="card-img-top" alt="..."
+                                                    style="border-top-left-radius: 10%; border-top-right-radius: 10%;">
+                                                <div class="card-body">
+                                                    <p class="card-text text-muted">Microsoft AZ-900 (GLP-Title)</p>
+                                                    <h4 class="card-title"><b>Microsoft Azure-Beginner's Guide</b>
+                                                    </h4>
+                                                    <p><small style="color: #18B4E3;">intermediate
+
+                                                            -5 min 2500 points</small></p>
+                                                    <p class="card-text">The Detailed description about Microsoft
+                                                        azure
+                                                        -
+                                                        beginners guide for students and professionals who are
+                                                        looking
+                                                        for a
+                                                        starter Guide</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <button type="button" class="btn btn-sm"
+                                                        style="color: #58C0E8; background-color: #afdcee;">Published</button>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+
+                                    <div class="col mb-4">
+                                        <section style="width: 100%;">
+                                            <div class="card card11" style="  border-radius: 8%;">
+                                                <img src="lastc3.png" class="card-img-top" alt="..."
+                                                    style="border-top-left-radius: 10%; border-top-right-radius: 10%;">
+                                                <div class="card-body">
+                                                    <p class="card-text text-muted">Microsoft AZ-900 (GLP-Title)</p>
+                                                    <h4 class="card-title"><b>Microsoft Azure-Beginner's Guide</b>
+                                                    </h4>
+                                                    <p><small style="color: #18B4E3;">intermediate
+
+                                                            -5 min 2500 points</small></p>
+                                                    <p class="card-text">The Detailed description about Microsoft
+                                                        azure
+                                                        -
+                                                        beginners guide for students and professionals who are
+                                                        looking
+                                                        for a
+                                                        starter Guide</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <button type="button" class="btn btn-sm"
+                                                        style="color: #58C0E8; background-color: #afdcee;">Published</button>
+                                                </div>
+                                            </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+
+
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- sidebar -->
+
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+    <!--  -->
+
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
